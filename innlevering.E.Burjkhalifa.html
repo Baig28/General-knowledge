@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdens høyeste skyskrapere</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p.subtitle {
+            text-align: center;
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #666;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        .images-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .image-frame {
+            width: 30%;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .image-frame img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .image-frame a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .image-frame a:hover img {
+            transform: scale(1.05);
+        }
+
+        .image-frame a p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .image-frame a:hover p {
+            color: #0073e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Frame 1: Tittel -->
+        <h1>Verdens høyeste skyskrapere</h1>
+
+        <!-- Frame 2: Tabellen -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Skyskraper</th>
+                    <th>Høyde</th>
+                    <th>By</th>
+                    <th>Land</th>
+                    <th>Byggeår</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Burj Khalifa</td>
+                    <td>828 m</td>
+                    <td>Dubai</td>
+                    <td>De forente arabiske emirater</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>Shanghai Tower</td>
+                    <td>632 m</td>
+                    <td>Shanghai</td>
+                    <td>Kina</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>Makkah Royal Clock Tower</td>
+                    <td>601 m</td>
+                    <td>Mekka</td>
+                    <td>Saudi-Arabia</td>
+                    <td>2011</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Undertittel før bildene -->
+        <p class="subtitle">Utforsk de skjulte hemmelighetene bak verdens høyeste skyskrapere – fra Burj Khalifa til Shanghai Tower og The Royal Clock Tower.</p>
+
+        <!-- Frame 3: Bilder i enkle bokser -->
+        <div class="images-container">
+            <div class="image-frame">
+                <a href="https://snl.no/Burj_Khalifa">
+                    <img src="burj_stor.jpg" alt="Burj Khalifa">
+                    <p>Burj Khalifa</p>
+                </a>
+            </div>
+            <div class="image-frame">
+                <a href="https://en.wikipedia.org/wiki/Shanghai_Tower">
+                    <img src="Shanghai_stor.jpg" alt="Shanghai Tower">
+                    <p>Shanghai Tower</p>
+                </a>
+            </div>
+            <div class="image-frame">
+                <a href="https://en.wikipedia.org/wiki/The_Clock_Towers">
+                    <img src="Makkah_stor.jpg" alt="Makkah Royal Clock Tower">
+                    <p>Makkah Royal Clock Tower</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

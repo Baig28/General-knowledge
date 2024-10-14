@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdens høyeste skyskrapere</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f6f5f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .frame {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f6f5f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            color: #3f4259;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p.subtitle {
+            font-size: 16px;
+            color: #3f4259;
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            color: #404040;
+        }
+
+        th {
+            background-color: #3f5765;
+            color: white;
+        }
+
+        .images-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .image-frame {
+            flex: 1;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .image-frame img {
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .image-frame a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .image-frame a:hover img {
+            opacity: 0.9;
+        }
+
+        .image-frame a p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #3f4259;
+            margin-top: 10px;
+        }
+
+        .image-frame a:hover p {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Frame 1: Tittel -->
+        <div class="frame">
+            <h1>Verdens høyeste skyskrapere</h1>
+        </div>
+
+        <!-- Frame 2: Tabellen -->
+        <div class="frame">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skyskraper</th>
+                        <th>Høyde</th>
+                        <th>By</th>
+                        <th>Land</th>
+                        <th>Byggeår</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Burj Khalifa</td>
+                        <td>828 m</td>
+                        <td>Dubai</td>
+                        <td>De forente arabiske emirater</td>
+                        <td>2009</td>
+                    </tr>
+                    <tr>
+                        <td>Shanghai Tower</td>
+                        <td>632 m</td>
+                        <td>Shanghai</td>
+                        <td>Kina</td>
+                        <td>2014</td>
+                    </tr>
+                    <tr>
+                        <td>Makkah Royal Clock Tower</td>
+                        <td>601 m</td>
+                        <td>Mekka</td>
+                        <td>Saudi-Arabia</td>
+                        <td>2011</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Undertittel før bildene -->
+        <p class="subtitle">Utforsk de skjulte hemmelighetene bak verdens høyeste skyskrapere – fra Burj Khalifa til Shanghai Tower og The Royal Clock Tower. Hvilken av disse arkitektoniske mesterverkene skjuler en fascinerende historie <strong>du aldri har hørt før?</strong></p>
+
+        <!-- Frame 3: Bilder i fancy bokser -->
+        <div class="frame">
+            <div class="images-container">
+                <div class="image-frame">
+                    <a href="https://snl.no/Burj_Khalifa">
+                        <img src="burj_stor.jpg" alt="Burj Khalifa">
+                        <p>Burj Khalifa</p>
+                    </a>
+                </div>
+                <div class="image-frame">
+                    <a href="https://en.wikipedia.org/wiki/Shanghai_Tower">
+                        <img src="Shanghai_stor.jpg" alt="Shanghai Tower">
+                        <p>Shanghai Tower</p>
+                    </a>
+                </div>
+                <div class="image-frame">
+                    <a href="https://en.wikipedia.org/wiki/The_Clock_Towers">
+                        <img src="Makkah_stor.jpg" alt="Makkah Royal Clock Tower">
+                        <p>Makkah Royal Clock Tower</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
